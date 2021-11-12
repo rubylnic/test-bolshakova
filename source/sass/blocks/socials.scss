@@ -1,0 +1,45 @@
+.socials {
+  display: grid;
+
+  width: 100%;
+  max-width: 996px;
+  margin-bottom: 80px;
+  padding: 42px 40px;
+
+  border-radius: 40px;
+  box-shadow: 0 20px 60px 0 rgba(26, 26, 26, 0.05);
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.socials__text {
+  margin-bottom: 16px;
+
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.socials__list {
+  display: flex;
+
+  padding: 0;
+
+  list-style: none;
+
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.socials__link {
+  display: flex;
+
+  width: 56px;
+  height: 56px;
+
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    fill: $green;
+  }
+}
