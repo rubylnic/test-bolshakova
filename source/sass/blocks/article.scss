@@ -1,0 +1,91 @@
+.article {
+  padding: 22px 40px 80px 40px;
+}
+
+.article__header {
+  display: flex;
+
+  margin-bottom: 16px;
+
+  align-items: center;
+  gap: 12px;
+}
+
+.article__share {
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+}
+
+.article__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+.article__text {
+  max-width: 690px;
+  margin-bottom: 32px;
+
+  font-size: 15px;
+  line-height: 21.5px;
+
+  span {
+    display: block;
+  }
+}
+
+.article__connect-text {
+  margin-bottom: 16px;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.6px;
+}
+
+.article__connect {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.chat-button {
+  display: flex;
+
+  padding: 15px 58px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+
+  color: $white;
+  border: none;
+  border-radius: 12px;
+  background-color: $green;
+
+  align-items: center;
+  gap: 8px;
+}
+
+.mail-link {
+  padding: 16px;
+
+  svg {
+    fill: $green;
+  }
+}
+
+.call-link {
+  padding: 16px;
+
+  svg {
+    fill: $green;
+  }
+}

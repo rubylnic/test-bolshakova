@@ -700,6 +700,83 @@ template {
   .support::after {
     display: none; } }
 
+.article {
+  padding: 22px 40px 80px 40px; }
+
+.article__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px; }
+
+.article__share {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent; }
+
+.article__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px; }
+
+.article__text {
+  max-width: 690px;
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 21.5px; }
+  .article__text span {
+    display: block; }
+
+.article__connect-text {
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15.6px; }
+
+.article__connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.chat-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 58px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  background-color: #36ba5f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px; }
+
+.mail-link {
+  padding: 16px; }
+  .mail-link svg {
+    fill: #36ba5f; }
+
+.call-link {
+  padding: 16px; }
+  .call-link svg {
+    fill: #36ba5f; }
+
 /**
  * Swiper 6.4.15
  * Most modern mobile touch slider and framework with hardware accelerated transitions
