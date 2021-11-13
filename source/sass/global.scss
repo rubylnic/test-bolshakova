@@ -92,6 +92,62 @@ input[type='radio'].visually-hidden {
   line-height: 24px;
 }
 
+.chat-button {
+  display: flex;
+
+  padding: 15px 58px;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+
+  color: $white;
+  border: none;
+  border-radius: 12px;
+  background-color: $green;
+
+  align-items: center;
+  gap: 8px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.mail-link {
+  padding: 16px;
+
+  transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  svg {
+    fill: $green;
+  }
+}
+
+.call-link {
+  padding: 16px;
+
+  transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  svg {
+    fill: $green;
+  }
+}
+
 @media(max-width:$widthTablet) {
   .title {
     font-size: 30px;

@@ -8,6 +8,8 @@
 
 .faq__subtitle {
   margin-bottom: 8px;
+
+  transition: all 0.3s ease-in;
 }
 
 .faq__text {
@@ -18,7 +20,6 @@
   position: relative;
 
   box-sizing: border-box;
-  // max-width: 150px;
   height: auto;
   min-height: 160px;
   padding: 16px;
@@ -27,6 +28,13 @@
 
   color: $black;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+
+  &:hover,
+  &:focus {
+    .faq__subtitle {
+      color: $green;
+    }
+  }
 
   .subtitle {
     max-width: 150px;
@@ -81,6 +89,10 @@
   &:hover,
   &:focus {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+    svg {
+      fill: $green;
+    }
   }
 
   &.hidden {

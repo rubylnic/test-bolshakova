@@ -19,6 +19,7 @@
   min-height: 64px;
   padding: 20px 30px;
 
+  transition: all 0.3s ease-in;
   text-decoration: none;
 
   color: $black;
@@ -37,6 +38,11 @@
     transform: translateY(-50%);
 
     background: url('../img/arrow.svg') 0 0 no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    color: $green;
   }
 }
 

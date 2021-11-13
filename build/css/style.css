@@ -82,6 +82,46 @@ input[type='radio'].visually-hidden {
   font-weight: 600;
   line-height: 24px; }
 
+.chat-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 58px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  background-color: #36ba5f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px; }
+  .chat-button:hover, .chat-button:focus {
+    opacity: 0.7; }
+
+.mail-link {
+  padding: 16px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
+  .mail-link:hover, .mail-link:focus {
+    opacity: 0.7; }
+  .mail-link svg {
+    fill: #36ba5f; }
+
+.call-link {
+  padding: 16px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
+  .call-link:hover, .call-link:focus {
+    opacity: 0.7; }
+  .call-link svg {
+    fill: #36ba5f; }
+
 @media (max-width: 768px) {
   .title {
     font-size: 30px; } }
@@ -455,7 +495,9 @@ template {
   text-align: center; }
 
 .faq__subtitle {
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
 
 .faq__text {
   color: #949494; }
@@ -471,6 +513,8 @@ template {
   color: #1a1a1a;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.05); }
+  .faq__item:hover .faq__subtitle, .faq__item:focus .faq__subtitle {
+    color: #36ba5f; }
   .faq__item .subtitle {
     max-width: 150px; }
   .faq__item::before {
@@ -513,6 +557,8 @@ template {
   .faq__arrow:hover, .faq__arrow:focus {
     -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); }
+    .faq__arrow:hover svg, .faq__arrow:focus svg {
+      fill: #36ba5f; }
   .faq__arrow.hidden {
     display: none; }
 
@@ -540,6 +586,8 @@ template {
   position: relative;
   min-height: 64px;
   padding: 20px 30px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   text-decoration: none;
   color: #1a1a1a;
   border-radius: 16px;
@@ -555,6 +603,8 @@ template {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     background: url("../img/arrow.svg") 0 0 no-repeat; }
+  .info__link:hover, .info__link:focus {
+    color: #36ba5f; }
 
 .info__text {
   max-width: 500px;
@@ -598,12 +648,16 @@ template {
   display: flex;
   width: 56px;
   height: 56px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .socials__link:hover, .socials__link:focus {
+    opacity: 0.7; }
   .socials__link svg {
     fill: #36ba5f; }
 
@@ -679,6 +733,8 @@ template {
   display: flex;
   width: 100%;
   padding: 15px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   text-decoration: none;
   font-weight: 600;
   color: #1a1a1a;
@@ -691,6 +747,13 @@ template {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px; }
+  .support__link svg {
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
+  .support__link:hover, .support__link:focus {
+    color: #36ba5f; }
+    .support__link:hover svg, .support__link:focus svg {
+      fill: #36ba5f; }
 
 @media (max-width: 768px) {
   .support__list {
@@ -716,8 +779,12 @@ template {
 .article__share {
   padding: 0;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   border: none;
   background-color: transparent; }
+  .article__share:hover, .article__share:focus {
+    opacity: 0.7; }
 
 .article__title {
   font-size: 24px;
@@ -748,34 +815,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.chat-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px 58px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 18px;
-  color: #ffffff;
-  border: none;
-  border-radius: 12px;
-  background-color: #36ba5f;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px; }
-
-.mail-link {
-  padding: 16px; }
-  .mail-link svg {
-    fill: #36ba5f; }
-
-.call-link {
-  padding: 16px; }
-  .call-link svg {
-    fill: #36ba5f; }
 
 /**
  * Swiper 6.4.15

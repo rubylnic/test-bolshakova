@@ -15,9 +15,15 @@
   padding: 0;
 
   cursor: pointer;
+  transition: all 0.3s ease-in;
 
   border: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .article__title {
@@ -52,40 +58,4 @@
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
-}
-
-.chat-button {
-  display: flex;
-
-  padding: 15px 58px;
-
-  cursor: pointer;
-
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 18px;
-
-  color: $white;
-  border: none;
-  border-radius: 12px;
-  background-color: $green;
-
-  align-items: center;
-  gap: 8px;
-}
-
-.mail-link {
-  padding: 16px;
-
-  svg {
-    fill: $green;
-  }
-}
-
-.call-link {
-  padding: 16px;
-
-  svg {
-    fill: $green;
-  }
 }

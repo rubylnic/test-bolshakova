@@ -89,6 +89,7 @@
   width: 100%;
   padding: 15px;
 
+  transition: all 0.3s ease-in;
   text-decoration: none;
 
   font-weight: 600;
@@ -100,6 +101,19 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+
+  svg {
+    transition: all 0.3s ease-in;
+  }
+
+  &:hover,
+  &:focus {
+    color: $green;
+
+    svg {
+      fill: $green;
+    }
+  }
 }
 
 @media(max-width:$widthTablet) {
