@@ -3,7 +3,8 @@
 
   width: 100%;
   max-width: 996px;
-  margin-bottom: 80px;
+  margin: 0 auto;
+  margin-bottom: 52px;
   padding: 42px 40px;
 
   border-radius: 40px;
@@ -23,9 +24,11 @@
   display: flex;
 
   padding: 0;
+  padding-top: 17px;
 
   list-style: none;
 
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 14px;
 }
@@ -41,5 +44,20 @@
 
   svg {
     fill: $green;
+  }
+}
+
+@media(max-width:900px) {
+  .socials {
+    padding: 20px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .socials__list {
+    display: grid;
+
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

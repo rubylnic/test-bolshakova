@@ -1,0 +1,48 @@
+.info {
+  max-width: 996px;
+  margin: 0 auto;
+}
+
+.info__title {
+  text-align: center;
+}
+
+.info__container {
+  display: grid;
+
+  gap: 12px;
+}
+
+.info__link {
+  position: relative;
+
+  min-height: 64px;
+  padding: 20px 30px;
+
+  text-decoration: none;
+
+  color: $black;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+
+    width: 6.42px;
+    height: 11.17px;
+
+    content: '';
+    transform: translateY(-50%);
+
+    background: url('../img/arrow.svg') 0 0 no-repeat;
+  }
+}
+
+.info__text {
+  max-width: 500px;
+
+  font-size: 13px;
+  line-height: 18.2px;
+}

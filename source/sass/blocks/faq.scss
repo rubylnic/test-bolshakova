@@ -2,6 +2,10 @@
   margin-bottom: 80px;
 }
 
+.faq__title {
+  text-align: center;
+}
+
 .faq__subtitle {
   margin-bottom: 8px;
 }
@@ -50,4 +54,48 @@
       display: none;
     }
   }
+}
+
+.faq__arrow {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  padding: 0;
+
+  cursor: pointer;
+  transform: translateY(-50%);
+
+  border: none;
+  border-radius: 50%;
+  background-color: $white;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.faq__arrow-left {
+  left: 0;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.faq__arrow-right {
+  right: 0;
 }
